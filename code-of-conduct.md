@@ -13,10 +13,14 @@ Need help?
 
 If you are experiencing harassment on or have concerns about content within the [GitHub repo](https://github.com/papers-we-love/papers-we-love), the **#paperswelove** IRC channel on Freenode, the **paperswelove.slack.com** Slack, or [PapersWeLove.org](http://paperswelove.org) please contact:
 
-- **Chris Hiestand** [chris@pwlsd.org](mailto:chris@pwlsd.org)
-- **All** [contact@paperswelove.org](mailto:contact@paperswelove.org)
+- **Chris Hiestand** <mailto:chris@pwlsd.org>
+- **Daniel Norman** <mailto:daniel@pwlsd.org>
+- **Heather Brysiewicz** <mailto:heather@pwlsd.org>
 
 The organizers of your local Papers We Love meet-up/event are available to help you with any issues or concerns at live events.
+
+Please try your local organizers first, but if the local organizers are unable to help you can contact a top-level PWL organizer:
+- **Organizers of global chapters** <mailto:contact@paperswelove.org>
 
 What it means
 -------------
