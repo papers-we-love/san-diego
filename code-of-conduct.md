@@ -1,7 +1,5 @@
 # Code of Conduct
 
-> Local chapters should fork this document and modify to meet the needs of their communities.
-
 All attendees, speakers, exhibitors, organizers, contributors and volunteers are required to conform to the following Code of Conduct.
 
 Papers We Love events are for anyone interested in Computer Science/Computer Engineering, its history, and related fields to discuss academic research in a fun, engaging and respectful environment.
@@ -15,8 +13,7 @@ Need help?
 
 If you are experiencing harassment on or have concerns about content within the [GitHub repo](https://github.com/papers-we-love/papers-we-love), the **#paperswelove** IRC channel on Freenode, the **paperswelove.slack.com** Slack, or [PapersWeLove.org](http://paperswelove.org) please contact:
 
-- **Organizer name** [org@email.com](mailto:org@email.com)
-- **Organizer name** [org@email.com](mailto:org@email.com)
+- **Chris Hiestand** [chris@pwlsd.org](mailto:chris@pwlsd.org)
 - **All** [contact@paperswelove.org](mailto:contact@paperswelove.org)
 
 The organizers of your local Papers We Love meet-up/event are available to help you with any issues or concerns at live events.
@@ -24,7 +21,7 @@ The organizers of your local Papers We Love meet-up/event are available to help 
 What it means
 -------------
 
-Papers We Love is dedicated to providing a harassment-free experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of meet-up participants in any form.
+Papers We Love is dedicated to providing a harassment-free experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or age. We do not tolerate harassment of meet-up participants in any form.
 
 All communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate for any meet-up, including talks.
 
@@ -52,4 +49,3 @@ As noted above, local chapters are encouraged to fork and modify the Code of Con
 - [JS Conf EU](http://2014.jsconf.eu/code-of-conduct.html)
 - [Pycon](https://github.com/python/pycon-code-of-conduct/blob/master/code_of_conduct.md)
 - [Hacker School's Social Rules](https://www.hackerschool.com/manual#sub-sec-social-rules)
-
