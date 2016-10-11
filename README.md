@@ -17,4 +17,3 @@ Twitter: [@pwl_sd](https://twitter.com/pwl_sd)
 
 [Chris Hiestand](mailto:chris@pwlsd.org) [@dimmer](https://twitter.com/dimmer)  
 [Daniel Norman](mailto:daniel@pwlsd.org) [@DreamingInCode](https://twitter.com/DreamingInCode)  
-[Heather Brysiewicz](mailto:heather@pwlsd.org) [@caligoanimus](https://twitter.com/caligoanimus)
