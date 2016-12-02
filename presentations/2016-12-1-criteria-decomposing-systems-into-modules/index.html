@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>On the Criteria To Be Used in Decomposing Systems into Modules</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/serif.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    </head>
+    <body>
+    <div class="reveal">
+    <div class="slides">
+
+    <section>
+        <h5>On the Criteria To Be Used in Decomposing Systems into Modules</h5>
+        <p>D.L. Parnas</p>
+        <p>1972</p>
+        <p>Presented by Chris Hiestand: <a href="https://twitter.com/dimmer/">@dimmer</a></p>
+        <aside class="notes">
+            <ul>
+                <li>list of seminal papers in computer science</li>
+                <li>religion</li>
+            </ul>
+        </aside>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <figcaption>Programming Technology</figcaption>
+            <img src="phone.jpg" title="technology changes, kind of" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section><h3>1972 Technology</h3>
+        <ul>
+            <li>First general processor, Intel 4004, released in 1971</li>
+            <li>C Programming Language developed in 1972</li>
+            <li>Languages: Assembly, Fortran, Algol, Cobol, Lisp</li>
+            <li>newfangled Modules! According to D.L. Parnas</li>
+            <li>KWIC can be programmed with time measured in weeks</li>
+            <li>Characters, not strings</li>
+        </ul>
+    </section>
+
+
+    <section><h3>What is a Module?</h3>
+        <p>A module denotes a <strike>function</strike> responsibility assignment. Modules, together, describe the entire system.</p>
+        <aside class="notes">
+            Parnas uses the word "subprogram" but I think that translates to "function"
+        </aside>
+    </section>
+
+    <section><p>Assumed Module Benefits:
+        <ul>
+            <li>modules allow separation of labor, e.g. teams</li>
+            <li>independent testing</li>
+            <li>flexibility</li>
+            <li>comprehensibility via composibility</li>
+            <li>easier error tracking</li>
+        </ul></p>
+        <aside class="notes">
+            But how do we divide a program? There are many ways to divide systems.
+        </aside>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <img src="pie1.jpg" alt="pie style 1" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <img src="pie2.jpg" alt="pie style 2" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section>
+        <p>Modules include design decisions which must be made <em>before</em> coding begins.</p>
+        <p>Measure twice, code once.</p>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <figcaption>KWIC: Keyword In Context Example</figcaption>
+            <img src="kwic.png" alt="kwic example" style="margin: 0;"/>
+            <figcaption>source: <a href="https://en.wikipedia.org/wiki/Key_Word_in_Context">https://en.wikipedia.org/wiki/Key_Word_in_Context</a></figcaption>
+        </figure>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <figcaption>Modularization 1: Flow-Chart</figcaption>
+            <img src="kwic1.png" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section>
+        <h3>Design Decisions (partial list)</h3>
+        <ol>
+            <li>Change in Data Format</li>
+            <li>Data loaded in memory all at once</li>
+            <li>Character encoding - 4 characters to a word</li>
+            <li>Index of Circular Shifts rather than raw data</li>
+            <li>Alphabetize the list at once, rather than as needed or over time</li>
+        </ol>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <figcaption>Modularization 2: Information Hiding</figcaption>
+            <img src="kwic2.png" style="margin: 0;"/>
+        </figure>
+        <aside class="notes">
+            Note: modules are no longer ordered
+        </aside>
+    </section>
+
+    <section>
+        <p>Information Hiding Entails Module Interface Changes</p>
+        <aside class="notes">
+            More math-like
+        </aside>
+    </section>
+
+    <section>
+        <h3>Possible Strategy Commonalities</h3>
+        <ul>
+            <li>Same data structures</li>
+            <li>Same access functions</li>
+            <li>Compiled machine code may be identical</li>
+        </ul>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <figcaption>Change in Data Format</figcaption>
+            <figcaption>Decomposition 1</figcaption>
+            <img src="kwic1-format.png" style="margin: 0;"/>
+            <figcaption>Decomposition 2</figcaption>
+            <img src="kwic2-format.png" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <figcaption>Data no longer all in memory at once</figcaption>
+            <figcaption>Decomposition 1</figcaption>
+            <img src="kwic1-memory.png" style="margin: 0;"/>
+            <figcaption>Decomposition 2</figcaption>
+            <img src="kwic2-memory.png" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <h5>Data Packed (Encoded) Differently in Memory</h5>
+        <figure>
+            <figcaption>Decomposition 1</figcaption>
+            <img src="kwic1-encoding.png" style="margin: 0;"/>
+            <figcaption>Decomposition 2</figcaption>
+            <img src="kwic2-encoding.png" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <h5>Storing All Circular Shift Strings instead of Index of Shifts</h5>
+        <figure>
+            <figcaption>Decomposition 1</figcaption>
+            <img src="kwic1-shifts-raw-index.png" style="margin: 0;"/>
+            <figcaption>Decomposition 2</figcaption>
+            <img src="kwic2-shifts-raw-index.png" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <h5>Lazy or Stream/Batch Alphabetizing</h5>
+        <figure>
+            <figcaption>Decomposition 2</figcaption>
+            <img src="kwic2-alphabetizer-stream.png" style="margin: 0;"/>
+        </figure>
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <h5>Lazy or Stream/Batch Alphabetizing</h5>
+        <figure>
+            <figcaption>Decomposition 1</figcaption>
+            <img src="explosion.png" style="margin: 0;"/>
+        </figure>
+        <aside class="notes">
+            Parnas: This change will prove difficult in decomposition 1
+        </aside>
+    </section>
+
+    <section>
+        <h3>Advantages of Information Hiding</h3>
+        <p>Changeability</p>
+        <p>Independent Development</p>
+        <p>Comprehensibility - modules can be understood independently (subjective)</p>
+        <aside class="notes">
+            <p>Changeability - minimum, "math-like" interface</p>
+            <p>comprehensibility - flow-chart modules require understanding multiple just to understand 1, whereas information hiding based modules can be understood alone.</p>
+        </aside>
+    </section>
+
+    <section>
+        <h3>Problems with Decomposition 2</h3>
+        <p>Circular Shifter should not require knowledge of shift order</p>
+
+        <h4>Resulting Limitations:</h4>
+        <ol>
+            <li>Lines must all exist in table</li>
+            <li>lines cannot be included twice</li>
+            <li>requires additional helper function to identify original line of shift</li>
+        </ol>
+        <aside class="notes">
+            <p>mea culpa: light treatment of details. To be fair, Parnas also treats these details lightly and references previous papers.</p>
+        </aside>
+    </section>
+
+    <section>
+        <h3>Suggestions by Parnas</h3>
+        <ul>
+            <li>Use a factory function or class to generate data structures</li>
+            <li>Sequence of function calls for a module should be within that module</li>
+            <li>"control block module" - abstract away operating system specifics inside a module</li>
+            <li>character codes, orderings (collations), abstracted inside a module</li>
+            <li>sequences inside their own module - sequencing is not portable and so should be made flexible</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Efficiency concerns</h3>
+        <p>Frequent context switching is a concern<br />
+            solution: modern day compilers and interpreters?</p>
+
+        <p>Any other disadvantages?</p>
+
+    </section>
+
+    <section style="padding: 0; margin: 0;">
+        <figure>
+            <img src="the_general_problem.png" style="margin: 0;"/>
+        </figure>
+
+        <aside class="notes">
+            <ul>
+                <li>why it's important that Parnas specified module criteria: design choices that are likely to change</li>
+            </ul>
+        </aside>
+    </section>
+
+    <section>
+        <h3>Modules by Information Hiding</h3>
+        <p>Modules do not correspond to steps in processing</p>
+        <p>Interface is chosen to hide it's inner workings - as a result use minimum possible parameters</p>
+        <p>Comprehensibility - modules can be understood independently (subjective)</p>
+    </section>
+
+    <section><h3>Decomposition Common to a Compiler and Interpretator for the Same Language</h3>
+        <p>Information Hiding improves portability across compilers and interpreters</p>
+        <aside class="notes">
+            I think. For the same reasons are we've discussed above. Not sure if this a modern day concern for most programmers.
+        </aside>
+    </section>
+
+    <section>
+        <h3>Hierarchical Structure - Module Dependency Mapping</h3>
+        <ul>
+            <li>Assumed Beneficial</li>
+            <li>Determined to be independent of information hiding based "clean" composition</li>
+        </ul>
+        <aside class="notes">
+            <p>A hierarchy of mutually cooperating sequential processes</p>
+            <p>Dijkstra introduces the usage of synchonization primitives like semaphores</p>
+        </aside>
+
+    </section>
+
+    <section>
+        <h3>Questions</h3>
+        <ul>
+            <li>Where else might information hiding apply?</li>
+            <li>This paper isn't new. Are there newer, better, techniques?</li>
+        </ul>
+    </section>
+    </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+    { src: 'plugin/markdown/marked.js' },
+    { src: 'plugin/markdown/markdown.js' },
+    { src: 'plugin/notes/notes.js', async: true },
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+    });
+    </script>
+    </body>
+</html>
