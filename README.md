@@ -16,7 +16,7 @@ Alternatively, if you would like to see a paper presented but can't present it y
 ### Contact
 
 Email: <mailto:organizers@pwlsd.org>  
-Twitter: [@pwl_sd](https://twitter.com/pwl_sd)
+Twitter: [@pwl_sd](https://twitter.com/pwl_sd)  
 Slack: See the #sandiego channel in the official paperswelove team https://paperswelove.slack.com/messages/C1PDNUSN9
 
 ### Organizers
