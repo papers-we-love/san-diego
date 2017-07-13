@@ -8,6 +8,11 @@ PWLSD is organized via a meetup: <https://www.meetup.com/Papers-We-Love-San-Dieg
 
 We aim to meet once a month where one person presents one paper. We will always be looking for good speakers, if you are interested in speaking please contact us: <mailto:organizers@pwlsd.org>
 
+### Requested / Suggested Paper Presentations
+If you would like to give a presentation but don't have any clue which paper to present, just pick one from the list <https://docs.google.com/spreadsheets/d/1no2giLZ2tYz8WDKwxxHFFYmvwpykRSFXuz5pzFEym7w>
+
+Alternatively, if you would like to see a paper presented but can't present it yourself, just add it to the list: <https://docs.google.com/spreadsheets/d/1no2giLZ2tYz8WDKwxxHFFYmvwpykRSFXuz5pzFEym7w>
+
 ### Contact
 
 Email: <mailto:organizers@pwlsd.org>  
