@@ -17,9 +17,10 @@ Alternatively, if you would like to see a paper presented but can't present it y
 
 Email: <mailto:organizers@pwlsd.org>  
 Twitter: [@pwl_sd](https://twitter.com/pwl_sd)
+Slack: See the #sandiego channel in the official paperswelove team https://paperswelove.slack.com/messages/C1PDNUSN9
 
 ### Organizers
 
-[Chris Hiestand](mailto:chris@pwlsd.org) [@dimmer](https://twitter.com/dimmer)  
-[Daniel Norman](mailto:daniel@pwlsd.org) [@DreamingInCode](https://twitter.com/DreamingInCode)  
+Chris Hiestand [@dimmer](https://twitter.com/dimmer)  
+Daniel Norman [@DreamingInCode](https://twitter.com/DreamingInCode)  
 Marvin Humphrey  
