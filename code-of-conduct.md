@@ -13,9 +13,9 @@ Need help?
 
 If you are experiencing harassment on or have concerns about content within the [GitHub repo](https://github.com/papers-we-love/papers-we-love), the **#paperswelove** IRC channel on Freenode, the **paperswelove.slack.com** Slack, or [PapersWeLove.org](http://paperswelove.org) please contact:
 
-- **Chris Hiestand** <mailto:chris@pwlsd.org>
-- **Daniel Norman** <mailto:daniel@pwlsd.org>
-- **Heather Brysiewicz** <mailto:heather@pwlsd.org>
+- **Chris Hiestand** <https://www.meetup.com/Papers-We-Love-San-Diego/members/13491691/>
+- **Daniel Norman** <https://www.meetup.com/Papers-We-Love-San-Diego/members/34021472/>
+- **Marvin Humphrey** <https://www.meetup.com/Papers-We-Love-San-Diego/members/10756640/>
 
 The organizers of your local Papers We Love meet-up/event are available to help you with any issues or concerns at live events.
 
