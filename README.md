@@ -27,3 +27,4 @@ Slack: See the #sandiego channel in the official paperswelove team https://paper
 Chris Hiestand [@dimmer](https://twitter.com/dimmer)  
 Daniel Norman [@DreamingInCode](https://twitter.com/DreamingInCode)  
 Marvin Humphrey  
+Lisa Kaczmarczyk [@lisakaczmarczyk](https://twitter.com/lisakaczmarczyk)
